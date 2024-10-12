@@ -8,15 +8,17 @@ Structure:
 
 ##### How to do it (Linux / MacOs)
 
-1. Check if git, docker and docker compose are installed (latest versions of docker engine includes docker compose in itself) by running ```git --version & docker --version```. If something isn't installed write ```sudo apt-get update & sudo apt-get intall git``` for git and for docker follow [their tutorial](https://docs.docker.com/engine/install/ubuntu/).
-2. Clone your git repo by running ```git clone https://link-to-your-repo```* (in our case repo consists pages for web-site, you will see)
+1. Check if git, docker and docker compose are installed (latest versions of docker engine includes docker compose in itself) by running `git --version & docker --version`. If something isn't installed write `sudo apt-get update & sudo apt-get intall git` for git and for docker follow [their tutorial](https://docs.docker.com/engine/install/ubuntu/).
+2. Clone your git repo by running `git clone https://link-to-your-repo`* (in our case repo consists pages for web-site, you will see)
 3. Add Dockerfile with code from Dockerfile in this repo:
-https://github.com/pechinkin/trying-docker-nginx/Dockerfile
-4. Add docker-compose.yml to your directory as well:
-https://github.com/pechinkin/trying-docker-nginx/docker-compose.yml
-5. Run container with ```docker compose up -d```
-6. Check the connection by going to ```http://YOUR_VM_IP``` or by running ```curl http://YOUR_VM_IP``` in console.
-7. If you want to finish running container, find its ID by running ```docker ps``` and ```docker stop YOUR_CONTAINER_ID```
+https://github.com/pechinkin/trying-docker-nginx/blob/671d8cff90569823bed72cb6dbfc2eb6b7cbcfd3/Dockerfile#L1-L2
+
+5. Add docker-compose.yml to your directory as well:
+https://github.com/pechinkin/trying-docker-nginx/blob/671d8cff90569823bed72cb6dbfc2eb6b7cbcfd3/docker-compose.yml#L1-L5
+
+6. Run container with `docker compose up -d`
+7. Check the connection by going to `http://YOUR_VM_IP` or by running `curl http://YOUR_VM_IP` in console.
+8. If you want to finish running container, find its ID by running `docker ps` and `docker stop YOUR_CONTAINER_ID`
 
 *I cloned repository with my web-site: https://github.com/pechinkin/pechinkin.github.io
 
